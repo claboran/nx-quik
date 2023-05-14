@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "run:nx-qwik:dev": "nx run nx-quik:serve"
+    "run:nx-qwik:dev": "nx run nx-quik:serve",
+    "run:nx-qwik:dev:ssr": "nx run nx-quik:serve --ssr",
+    "run:nx-qwik:dev:preview": "nx run nx-quik:serve --preview",
+    "run:nx-qwik:build": "nx run nx-quik:build"
   },
   "private": true,
   "dependencies": {
