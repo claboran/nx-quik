@@ -54,7 +54,7 @@
       "options": {
         "buildTarget": "nx-quik:build.client",
         "mode": "ssr",
-        "port": 4200
+        "port": 4211
       }
     },
     "serve.debug": {
