@@ -43,6 +43,7 @@ This is a "work in progress project", so I will add more features as I go along.
 - [x] Basic setup of qwik + NX + tailwindcss + DaisyUI
 - [x] Styling with tailwindcss and DaisyUI + PostCSS nesting
 - [x] Using QwikCity for routing
+- [x] Using animate.css for animations
 - [ ] Build and Dev Server with nx
 - [ ] Using QwikCity for state management
 - [ ] I18n with qwik
@@ -67,6 +68,8 @@ npm install --save-dev daisyui
 ```
 
 ### Styling
+
+#### Tailwind, DaisyUI and PostCSS
 
 Add daisyui to the `tailwind.config.js` file:
 
@@ -117,6 +120,23 @@ module.exports = {
 ```
 Webstorm users need to switch to Style Sheets -> Dialects -> PostCSS.
 
+#### Animate.css
+
+Just import the css file in global.css - before the tailwindcss import:
+
+```css
+@import "animate.css/animate.min.css";
+@tailwind components;
+@tailwind base;
+@tailwind utilities;
+
+```
+and add it where you need it:
+
+```html
+<div class="animate__animated animate__bounce">...</div>
+```
+
 ## Further help
 Visit the [Quik Documentation](https://qwik.builder.io/docs)
 
@@ -125,4 +145,6 @@ Visit the [Nx Documentation](https://nx.dev)
 Visit the [Nx quik Plugin Documentation](https://github.com/qwikifiers/qwik-nx)
 
 Visit the [DaisyUI Documentation](https://daisyui.com/)
+
+Visit the [Animate.css Documentation](https://animate.style/)
 

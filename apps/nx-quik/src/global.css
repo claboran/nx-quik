@@ -1,3 +1,4 @@
+@import "animate.css/animate.min.css";
 @tailwind components;
 @tailwind base;
 @tailwind utilities;
